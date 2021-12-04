@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="list_divider">@color/Grey400</color>
+
+    <color name="White">#FFFFFF</color>
+    <color name="Grey400">#bdbdbd</color>
+    <color name="viewBackground">@color/White</color>
+
+    <color name="item_nav_color_tv">#19191B</color>
+
+    <color name="textColorPrimary">#616161</color>
+
+    <!--wheel_view-->
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pickerview_bgColor_overlay">#60000000</color>
+    <color name="pickerview_bgColor_default">#FFFFFFFF</color>
+
+    <!--picker_view-->
+    <color name="pickerview_timebtn_nor">#336475</color>
+    <color name="pickerview_timebtn_pre">#337499</color>
+    <color name="pickerview_bg_topbar">#FFFFFF</color>
+    <color name="selected">#F436A8</color>
+    <color name="normal">#F8EBEA</color>
+    <color name="picture_text_color">#53575e</color>
+    <color name="color_69">#999999</color>
+    <color name="app_color_53575e">#53575e</color>
+
+
+    <drawable name="ocr_btn_press">#888888</drawable>
+    <drawable name="ocr_btn_normal">#ffffff</drawable>
+
+    <color name="cancel_bg">#F4F4F4</color>
+    <color name="sure_bg">#0084FE</color>
+
+    <color name="dialog_title">#323232</color>
+
+    <color name="list_item_title">#333333</color>
+    <color name="list_item_desc">#666666</color>
+    <color name="black60">#99000000</color>
+</resources>

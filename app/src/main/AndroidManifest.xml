@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.simplation.androiddemos">
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-feature android:name="android.hardware.camera2.full" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".ui.activity.Main2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".function_summary.banner.AlbumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".function_summary.banner.HeaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".function_summary.banner.BannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".function_summary.charts.ChartsActivity"
+            android:exported="false"
+            android:theme="@style/BaseAppTheme" />
+        <activity android:name=".function_summary.take_photo.TakePhotoActivity" />
+        <activity
+            android:name=".function_summary.take_photo.code.ui.PermissionActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".function_summary.test.PreferenceScreenActivity" />
+        <activity android:name=".function_summary.basic_controler.BasicControlsActivity" />
+        <activity android:name=".function_summary.process_node.ProcessNodeActivity" />
+        <activity android:name=".function_summary.baidu_track.TrackQueryOptionsActivity" />
+        <activity android:name=".function_summary.baidu_track.TracingOptionsActivity" />
+        <activity android:name=".function_summary.baidu_track.TrackBackActivity" />
+        <activity android:name=".function_summary.baidu_track.TrackQueryActivity" />
+        <activity android:name=".function_summary.baidu_track.TracingActivity" />
+        <activity android:name=".function_summary.baidu_track.EagleTrackActivity" />
+        <activity android:name=".function_summary.baidu_ai.IDCardActivity" />
+        <activity android:name=".function_summary.baidu_ai.ocr.camera.CameraActivity" />
+        <activity android:name=".function_summary.baidu_ai.BaiduAIActivity" />
+        <activity android:name=".function_summary.imitate_fish.ImitateFishActivity" />
+        <activity android:name=".function_summary.video_player.VideoPlayerActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.voice.OneShotActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.voice.WakeActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.voice.IvwActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.voice.faceonline.OnlineFaceActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.voice.IdentifyGroup.GroupManagerActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.voice.vocalverify.VocalVerifyActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.speech.setting.IseSettings" />
+        <activity android:name=".function_summary.ifkey_sdk.voice.IseActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.speech.setting.TtsSettings" />
+        <activity android:name=".function_summary.ifkey_sdk.voice.TtsActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.voice.AsrActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.speech.setting.IatSettings" />
+        <activity android:name=".function_summary.ifkey_sdk.voice.IdentifyGroup.VocalIdentifyActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.voice.IatActivity" />
+        <activity android:name=".function_summary.ifkey_sdk.IfkytekSdkActivity" />
+        <activity android:name=".function_summary.picture.PictureSelectorTestActivity" />
+        <activity android:name=".function_summary.pdf_generate.pdf.PdfActivity" />
+        <activity android:name=".function_summary.pdf_generate.PdfGenerateTestActivity" />
+        <activity android:name=".function_summary.hand_write.SignatureTestActivity" />
+        <activity android:name=".function_summary.time_picker.TimePickerTestActivity" />
+        <activity android:name=".function_summary.single_multiple.act.MultipleSelectionActivity" />
+        <activity android:name=".function_summary.single_multiple.act.SingleSelectionActivity" />
+        <activity android:name=".function_summary.single_multiple.RecyclerTestActivity" />
+        <activity android:name=".function_summary.token.TokenTestActivity" /> <!-- 启动页 -->
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 主页 -->
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Z67ViK38jPZMCsAWTx4GsV7cim4BdRtg" />
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="&apos;5c749818&apos;" />
+        <meta-data
+            android:name="IFLYTEK_CHANNEL"
+            android:value="Android_Demo" /> <!-- 原来的 -->
+        <!--
+<provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        -->
+        <!-- 拍照的 xml -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.simplation"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name="com.baidu.trace.LBSTraceService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
+    </application>
+
+</manifest>

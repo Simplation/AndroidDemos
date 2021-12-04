@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_gravity="center" />
+
+    <com.simplation.androiddemos.widget.AnimLogoView
+        android:id="@+id/anim_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:autoPlay="false"
+        app:gradientAnimDuration="2000"
+        app:gradientColor="@color/colorAccent"
+        app:logoName="@string/app_name"
+        app:offsetAnimDuration="1500"
+        app:showGradient="true"
+        app:textColor="@color/colorPrimary"
+        app:textPadding="2dp"
+        app:textSize="30sp"
+        app:verticalOffset="50dp" />
+
+</FrameLayout>

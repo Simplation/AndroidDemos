@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_normal_height">56dp</dimen>
+
+    <!-- font size -->
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dp_110">110dp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="avatar_width">20dp</dimen>
+    <dimen name="avatar_height">20dp</dimen>
+
+    <!--    wheel_view      -->
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮padding -->
+    <dimen name="pickerview_topbar_padding">20dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">17sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">18sp</dimen>
+    <!-- 选项文字大小 -->
+    <dimen name="pickerview_textsize">20sp</dimen>
+    <dimen name="camera_left_margin">18dp</dimen>
+    <dimen name="camera_bottom_margin">16dp</dimen>
+    <dimen name="camera_right_margin">18dp</dimen>
+    <dimen name="camera_top_margin">16dp</dimen>
+    <dimen name="item_margin_left">15dp</dimen>
+</resources>

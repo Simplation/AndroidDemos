@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/other">
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="占位_1" />
+
+        <item
+            android:id="@+id/nav_night_mode"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="占位_2" />
+
+    </group>
+
+    <group android:id="@+id/other2">
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="占位_3" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="占位_4" />
+
+    </group>
+</menu>

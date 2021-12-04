@@ -1,0 +1,3 @@
+rootProject.name='AndroidDemos'
+include ':app'
+include ':android_banner'

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".function_summary.ifkey_sdk.IfkytekSdkActivity">
+
+    <Button
+        android:id="@+id/btn_transliteration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="语音转写"/>
+
+    <Button
+        android:id="@+id/btn_recognition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="语法识别"/>
+
+    <Button
+        android:id="@+id/btn_understanding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="语义理解"/>
+
+    <Button
+        android:id="@+id/btn_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="语音合成"/>
+
+    <Button
+        android:id="@+id/btn_synthesis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="语音评测"/>
+
+    <Button
+        android:id="@+id/btn_wake_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="语音唤醒"/>
+
+    <Button
+        android:id="@+id/btn_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="声纹"/>
+
+    <Button
+        android:id="@+id/btn_face_recognition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="人脸识别(在线)"/>
+
+</LinearLayout>
