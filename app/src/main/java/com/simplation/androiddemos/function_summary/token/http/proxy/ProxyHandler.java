@@ -23,7 +23,7 @@ import rx.Subscriber;
 import rx.functions.Func1;
 
 /**
- * @作者: W ◕‿-｡ Z
+ * @作者: Simplation
  * @日期: 2020/3/17
  * @描述:
  * @更新:
@@ -48,43 +48,32 @@ public class ProxyHandler implements InvocationHandler {
     }
 
     @Override
-    public Object invoke(final Object proxy, final Method method, final Object[] args) throws Throwable {
-        return Observable.just(null).flatMap(new Func1<Object, Observable<?>>() {
-            @Override
-            public Observable<?> call(Object o) {
+    public Object invoke(final Object proxy, final Method method, final Object[] args) {
+        return Observable.just(null).flatMap((Func1<Object, Observable<?>>) o -> {
+            try {
                 try {
-                    try {
-                        if (mIsTokenNeedRefresh) {
-                            updateMethodToken(method, args);
-                        }
-                        return (Observable<?>) method.invoke(mProxyObject, args);
-                    } catch (InvocationTargetException e) {
-                        e.printStackTrace();
+                    if (mIsTokenNeedRefresh) {
+                        updateMethodToken(method, args);
                     }
-                } catch (IllegalAccessException e) {
+                    return (Observable<?>) method.invoke(mProxyObject, args);
+                } catch (InvocationTargetException e) {
                     e.printStackTrace();
                 }
-                return null;
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
             }
-        }).retryWhen(new Func1<Observable<? extends Throwable>, Observable<?>>() {
-            @Override
-            public Observable<?> call(Observable<? extends Throwable> observable) {
-                return observable.flatMap(new Func1<Throwable, Observable<?>>() {
-                    @Override
-                    public Observable<?> call(Throwable throwable) {
-                        if (throwable instanceof TokenInvalidException) {
-                            return refreshTokenWhenTokenInvalid();
-                        } else if (throwable instanceof TokenNotExistException) {
-                            // Token 不存在，执行退出登录的操作。（为了防止多个请求，都出现 Token 不存在的问题，
-                            // 这里需要取消当前所有的网络请求）
-                            mGlobalManager.exitLogin();
-                            return Observable.error(throwable);
-                        }
-                        return Observable.error(throwable);
-                    }
-                });
+            return null;
+        }).retryWhen(observable -> observable.flatMap((Func1<Throwable, Observable<?>>) throwable -> {
+            if (throwable instanceof TokenInvalidException) {
+                return refreshTokenWhenTokenInvalid();
+            } else if (throwable instanceof TokenNotExistException) {
+                // Token 不存在，执行退出登录的操作。（为了防止多个请求，都出现 Token 不存在的问题，
+                // 这里需要取消当前所有的网络请求）
+                mGlobalManager.exitLogin();
+                return Observable.error(throwable);
             }
-        });
+            return Observable.error(throwable);
+        }));
     }
 
     /**

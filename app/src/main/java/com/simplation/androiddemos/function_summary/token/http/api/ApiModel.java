@@ -3,7 +3,7 @@ package com.simplation.androiddemos.function_summary.token.http.api;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * @作者: W ◕‿-｡ Z
+ * @作者: Simplation
  * @日期: 2020/3/17
  * @描述:
  * @更新:

@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_process_node.*
 import kotlin.collections.HashMap
 
 /**
- * @作者: W ◕‿-｡ Z
+ * @作者: Simplation
  * @日期: 2020-11-30 11:01
  * @描述: 流程节点图
  *          ProcessView 不需要进行 setData 操作

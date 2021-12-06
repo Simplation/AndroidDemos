@@ -30,7 +30,7 @@ public class UrlSettings extends PreferenceActivity implements Preference.OnPref
         getPreferenceManager().setSharedPreferencesName(PREFER_NAME);
         addPreferencesFromResource(R.xml.url_setting);
 
-        url_preference = (ListPreference)findPreference("url_preference");
+        url_preference = (ListPreference) findPreference("url_preference");
         url_preference.setSummary("当前：" + url_preference.getEntry());
         url_preference.setOnPreferenceChangeListener(this);
 

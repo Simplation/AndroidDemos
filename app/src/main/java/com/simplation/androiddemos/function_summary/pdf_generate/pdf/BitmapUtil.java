@@ -4,6 +4,7 @@ import java.io.File;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class BitmapUtil {
 
@@ -14,7 +15,7 @@ public class BitmapUtil {
         String string = "";
         File file = new File(filePath);
         Date date = new Date(file.lastModified());
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年M月d日 HH:mm:ss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年M月d日 HH:mm:ss", Locale.CHINA);
         string = sdf.format(date);
         return string;
     }
